@@ -15,7 +15,7 @@
   <tbody>
     <% @movies.each do |movie| %>
       <tr>
-        <td><%= image_tag(movie.image, width: 50) %></td>
+        <td><%= image_tag(movie.image, class: "img-responsive") %></td>
         <td><%= movie.title %></td>
         <td><%= movie.description %></td>
         <td><%= link_to 'Show', movie %></td>
